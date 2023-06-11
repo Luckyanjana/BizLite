@@ -1,0 +1,13 @@
+﻿@model Bizlite.SharedLib.ViewModel.LoginRequestDto
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_EmptyLayout.cshtml";
+}
+
+<div>
+    @await Html.PartialAsync("_Login")
+</div>
+@section Scripts{
+    <script src="~/js/viewscript/home.js"></script>
+    }
+

@@ -1,0 +1,14 @@
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\bin\Debug\net6.0\Bizlite.SharedLib.deps.json
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\bin\Debug\net6.0\Bizlite.SharedLib.dll
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\bin\Debug\net6.0\Bizlite.SharedLib.pdb
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.csproj.AssemblyReference.cache
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.Resource.BaseResponseMessages.resources
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.csproj.GenerateResource.cache
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.AssemblyInfoInputs.cache
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.AssemblyInfo.cs
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.csproj.CoreCompileInputs.cache
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.dll
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\refint\Bizlite.SharedLib.dll
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\Bizlite.SharedLib.pdb
+E:\Projects\Bizlite\src\SharedLib\Bizlite.SharedLib\obj\Debug\net6.0\ref\Bizlite.SharedLib.dll

@@ -1,0 +1,56 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link href="~/css/all.css" rel="stylesheet" />
+    <!-- Ionicons -->
+    <link href="~/css/icheck-bootstrap.css" rel="stylesheet" />
+
+    <link href="~/css/ionicons.min.css" rel="stylesheet" />
+    <!-- icheck bootstrap -->
+ 
+    <!-- Theme style -->
+
+    <link href="~/css/adminlte.css" rel="stylesheet" />
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <b>Biz</b>LITE</a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+
+            <section class="content">
+                @RenderBody()
+            </section>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    <!-- /.login-box -->
+    <!-- jQuery -->
+
+    <script src="~/js/plugin/jquery.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="~/js/plugin/bootstrap.bundle.js"></script>
+    <!-- AdminLTE -->
+    <script src="~/js/plugin/adminlte.js"></script>
+    
+    <script src="~/js/plugin/jquery.validate.min.js"></script>
+    <script src="~/js/plugin/jquery.validate.unobtrusive.js"></script>
+    <script src="~/js/global.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)<!--End area -->
+  
+
+</body>
+</html>

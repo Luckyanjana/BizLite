@@ -1,0 +1,74 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Bizlite | @ViewBag.Title</title>
+  <!-- Font Awesome Icons -->
+  
+    <link href="~/css/all.css" rel="stylesheet" />   
+  <!-- IonIcons -->
+
+    <link href="~/css/ionicons.min.css" rel="stylesheet" />
+  <!-- Theme style -->
+      <link href="~/css/adminlte.css" rel="stylesheet" />
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to to the body tag
+to get the desired effect
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+        <partial name="_Header.cshtml" />
+        <partial name="_Sidebar.cshtml" />
+
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+            <section class="content">
+                @RenderBody()
+            </section>
+
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+        <partial name="_Footer.cshtml" />
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+  
+    <script src="~/js/plugin/jquery.js"></script> 
+       
+<!-- Bootstrap -->   
+    <script src="~/js/plugin/bootstrap.bundle.js"></script>  
+<!-- AdminLTE -->
+ <script src="~/js/plugin/adminlte.js"></script>
+   
+<!-- OPTIONAL SCRIPTS -->
+    @await RenderSectionAsync("Scripts", required: false)<!--End area -->
+
+
+</body>
+</html>
