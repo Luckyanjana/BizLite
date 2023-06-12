@@ -1,11 +1,16 @@
 using Bizlite.API.Config;
+using Bizlite.Core.Interfaces;
+using Bizlite.Infra.Entities;
+using Bizlite.Infra.Repos;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JWT"));
 
 #region [ADD MiddleWare]
@@ -29,10 +34,10 @@ builder.Services.AddAuthentication(option =>
     };
 
 });
-//builder.Services.AddDbContext<MedicareHubContext>(Options =>
-//{
-//    Options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnections"));
-//});
+builder.Services.AddDbContext<BizliteContext>(Options =>
+{
+    Options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnections"));
+});
 // Add services to the container.
 
 
@@ -73,6 +78,7 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("*").AllowAnyHeader().AllowAnyOrigin();
     });
 });
+builder.Services.AddAutoMapper(typeof(Program));
 #endregion
 
 

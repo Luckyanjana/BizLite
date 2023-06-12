@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bizlite.API", "src\Services
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bizlite.Web", "src\Web\Bizlite.Web\Bizlite.Web.csproj", "{A036FA78-591E-4DCE-96C5-5F687C7DF46E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizlite.Core", "src\Services\Bizlite.Core\Bizlite.Core.csproj", "{27496D71-9ADA-4967-B7DD-75A01ACE95A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizlite.Infra", "src\Services\Bizlite.Infra\Bizlite.Infra.csproj", "{63C9AA8A-AD0B-48C8-A96C-1768722B363A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{A036FA78-591E-4DCE-96C5-5F687C7DF46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A036FA78-591E-4DCE-96C5-5F687C7DF46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A036FA78-591E-4DCE-96C5-5F687C7DF46E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27496D71-9ADA-4967-B7DD-75A01ACE95A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27496D71-9ADA-4967-B7DD-75A01ACE95A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27496D71-9ADA-4967-B7DD-75A01ACE95A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27496D71-9ADA-4967-B7DD-75A01ACE95A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C9AA8A-AD0B-48C8-A96C-1768722B363A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C9AA8A-AD0B-48C8-A96C-1768722B363A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C9AA8A-AD0B-48C8-A96C-1768722B363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C9AA8A-AD0B-48C8-A96C-1768722B363A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +58,8 @@ Global
 		{7AD16930-273A-4ACA-9BF1-09E0C49C00FC} = {617414B8-B2F9-499D-87D8-8E34779415A2}
 		{25E3D277-8700-4B7C-BE9F-D9B5DC718160} = {AE09CCA2-3279-4994-A958-FF60AEE571A3}
 		{A036FA78-591E-4DCE-96C5-5F687C7DF46E} = {7AD16930-273A-4ACA-9BF1-09E0C49C00FC}
+		{27496D71-9ADA-4967-B7DD-75A01ACE95A3} = {AE09CCA2-3279-4994-A958-FF60AEE571A3}
+		{63C9AA8A-AD0B-48C8-A96C-1768722B363A} = {AE09CCA2-3279-4994-A958-FF60AEE571A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4887AD6D-E8AC-457D-9D3A-6AAE588B9B5B}
