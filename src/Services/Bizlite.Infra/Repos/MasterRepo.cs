@@ -107,7 +107,7 @@ namespace Bizlite.Infra.Repos
             Update(tblAreaMaster);
             return tblAreaMaster;
         }
-        public void DeleteToDo(BizliteList.TblAreaMaster tblAreaMaster)
+        public void DeleteArea(BizliteList.TblAreaMaster tblAreaMaster)
         {
             Delete(tblAreaMaster);
 

@@ -9,8 +9,8 @@ namespace Bizlite.Core.Interfaces
     public interface IUnitOfWork
     {
         public IMasterRepo Master { get;}
-   
 
+        public IEmployeeRepo Employee { get; }
         void Save();
     }
 }

@@ -14,7 +14,7 @@ namespace Bizlite.Core.Interfaces
         public BizliteList.TblAreaMaster? GetAreaById(int id);
         public BizliteList.TblAreaMaster CreateArea(BizliteList.TblAreaMaster tblAreaMaster);
         public BizliteList.TblAreaMaster UpdateArea(BizliteList.TblAreaMaster tblAreaMaster);
-        public void DeleteToDo(BizliteList.TblAreaMaster tblAreaMaster);
+        public void DeleteArea(BizliteList.TblAreaMaster tblAreaMaster);
         public PageList<BizliteList.TblAreaMaster> GetAreaList(MasterSpecification model);
        
     }

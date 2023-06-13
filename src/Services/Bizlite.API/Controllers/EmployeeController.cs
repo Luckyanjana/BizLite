@@ -2,10 +2,13 @@
 using Bizlite.API.Config;
 using Bizlite.Core.Interfaces;
 using Bizlite.Core.Specifications;
+using Bizlite.SharedLib.Helper;
 using Bizlite.SharedLib.Resource;
 using Bizlite.SharedLib.ViewModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -20,33 +23,33 @@ namespace Bizlite.API.Controllers
     
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class MasterController : BaseController
+    public class EmployeeController : BaseController
     {
-        private readonly ILogger<MasterController> _logger;
+        private readonly ILogger<EmployeeController> _logger;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        public MasterController(ILogger<MasterController> logger, IUnitOfWork unitOfWork, IMapper mapper)
+        public EmployeeController(ILogger<EmployeeController> logger, IUnitOfWork unitOfWork, IMapper mapper)
         {
             _logger = logger;
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
-        [HttpGet] 
-        public IActionResult GetAllArea()
+        [HttpGet]
+        public IActionResult GetAllEmployees()
         {
             try
             {
-                var areas = _unitOfWork.Master.GetAllAreas();
-                var areaDto = _mapper.Map<List<AreaDTO>>(areas);
+                var employee = _unitOfWork.Employee.GetAllEmployee();
+                var employeeDto = _mapper.Map<List<EmployeeDto>>(employee);
 
                 _logger.LogInformation("Return Data successfully");
-                return SuccessResult(areaDto);
+                return SuccessResult(employeeDto);
             }
             catch (Exception ex)
             {
                 _logger.LogError($"Error occured :{ex.GetBaseException().Message}");
-                return ErrorResult("Internal Server Error");
+                return BadRequestErrorResult("Internal Server Error");
                 throw;
             }
 
@@ -54,12 +57,12 @@ namespace Bizlite.API.Controllers
 
 
         [HttpGet]
-        public IActionResult GetAllAreaList([FromQuery] MasterSpecification specs)
+        public IActionResult GetAllEmployeeList([FromQuery] EmployeeSpecification specs)
         {
             try
             {
                 //var authUser = new AuthUser(User);
-                var areas = _unitOfWork.Master.GetAreaList(specs);
+                var areas = _unitOfWork.Employee.GetEmployeeList(specs);
                 var pageMetaData = new
                 {
                     areas.CurrentPage,
@@ -84,18 +87,46 @@ namespace Bizlite.API.Controllers
         }
 
 
-        [HttpGet("{id}", Name = "GetAreaById")]
-        public IActionResult GetAreaById(int id)
+        [HttpGet("{id}",Name = "GetEmployeeById")]
+        public IActionResult GetEmployeeById(long id)
         {
             try
             {
-                var area = _unitOfWork.Master.GetAreaById(id);
-                if (area != null)
+                var employee = _unitOfWork.Employee.GetEmployeeById(id);
+                if (employee != null)
                 {
-                    var areadto = _mapper.Map<AreaDTO>(area);
+                    var employeedto = _mapper.Map<EmployeeDto>(employee);
 
                     _logger.LogInformation("Return Data successfully");
-                    return SuccessResult(areadto);
+                    return SuccessResult(employeedto);
+                }
+                else
+                {
+                    _logger.LogInformation("No Data Found");
+                    return NotFoundResult("No Data Found");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error occured :{ex.GetBaseException().Message}");
+                return ErrorResult("Internal Server Error");
+                throw;
+            }
+
+        }
+        [HttpGet("{id}", Name = "GetEmployeeByEmail")]
+        public IActionResult GetEmployeeByEmail(long id)
+        {
+            try
+            {
+                var employee = _unitOfWork.Employee.GetEmployeeById(id);
+                if (employee != null)
+                {
+                    var employeedto = _mapper.Map<EmployeeDto>(employee);
+
+                    _logger.LogInformation("Return Data successfully");
+                    return SuccessResult(employeedto);
                 }
                 else
                 {
@@ -114,7 +145,7 @@ namespace Bizlite.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateArea(AreaCreateUpdateDto model)
+        public IActionResult RegisterEmployee(EmployeeCreateUpdateDto model)
         {
             try
             {
@@ -122,26 +153,42 @@ namespace Bizlite.API.Controllers
                 {
 
                     _logger.LogError("User has not provided correct data");
-                    return BadRequestErrorResult("User has not provided correct data");
+                    return BadRequest();
                 }
+
+                string SaltKey = CommonClass.CreateSaltKey(15);
+                
                 //var authUser = new AuthUser(User);
-                var areaEntity = _mapper.Map<Bizlite.Core.Entities.TblAreaMaster>(model);
-                _unitOfWork.Master.CreateArea(areaEntity);
+                var employeeEntity = _mapper.Map<Bizlite.Core.Entities.TblEmployee>(model);
+                employeeEntity.SaltKey = SaltKey;
+                employeeEntity.EmpPassword = CommonClass.CreatePasswordHash(model.Password, SaltKey, "MD5");
+                _unitOfWork.Employee.RegisterEmployee(employeeEntity);
                 _unitOfWork.Save();
-                var area = _mapper.Map<AreaDTO>(areaEntity);
-                return CreatedAtRoute("GetAreaById", new { id = areaEntity.AreaId }, area);
+                var employee = _mapper.Map<EmployeeDto>(employeeEntity);
+                return CreatedAtRoute("GetEmployeeById", new { id = employeeEntity.EmpId }, employee);
+            }
+            catch (DbUpdateException ex)
+            {
+                var sqlException = ex.GetBaseException() as SqlException;
+                if (sqlException != null && sqlException.Number == 2627)
+                {
+                    // Unique key constraint violation
+                    return ErrorResult("User with this email already exists.");
+                }
+                // Handle other database exceptions if needed
+                return StatusCode(500, "Internal server error");
             }
             catch (Exception ex)
             {
                 _logger.LogError("Some error occur when saving todo:" + ex.GetBaseException().Message.ToString());
-                return ErrorResult("Internal Server Error");
+                return BadRequestErrorResult(ex.GetBaseException().Message.ToString());
             }
 
 
         }
 
-        [HttpPut("{id}", Name = "UpdateArea")]
-        public IActionResult UpdateArea(int id, AreaCreateUpdateDto model)
+        [HttpPut("{id}")]
+        public IActionResult UpdateEmployee(int id, EmployeeCreateUpdateDto model)
         {
             try
             {
@@ -149,11 +196,11 @@ namespace Bizlite.API.Controllers
                 {
 
                     _logger.LogError("User has not provided correct data");
-                    return BadRequestErrorResult("User has not provided correct data");
+                    return BadRequest();
                 }
                 // var authUser = new AuthUser(User);
-                var areaobj = _unitOfWork.Master.GetAreaById(id);
-                if (areaobj == null)
+                var employeeobj = _unitOfWork.Employee.GetEmployeeById(id);
+                if (employeeobj == null)
                 {
                     _logger.LogError("User not found");
                     return NotFoundResult("User not found");
@@ -164,13 +211,13 @@ namespace Bizlite.API.Controllers
                 //    _logger.LogError("Todo does not belongs to this user");
                 //    return Unauthorized();
                 //}
-                _mapper.Map(model, areaobj);
-                _unitOfWork.Master.UpdateArea(areaobj);
+                _mapper.Map(model, employeeobj);
+                _unitOfWork.Employee.UpdateEmployee(employeeobj);
                 _unitOfWork.Save();
-                var areaEntity = _mapper.Map<AreaDTO>(areaobj);
+                var employeeEntity = _mapper.Map<EmployeeDto>(employeeobj);
 
 
-                return CreatedAtRoute("GetToDoById", new { id = areaEntity.AreaId }, areaEntity);
+                return CreatedAtRoute("GetEmployeeById", new { id = employeeEntity.EmpId }, employeeEntity);
             }
             catch (Exception ex)
             {
@@ -181,11 +228,8 @@ namespace Bizlite.API.Controllers
 
         }
 
-
-
-
-        [HttpDelete("{id}", Name = "DeleteArea")]
-        public IActionResult DeleteArea(int id)
+        [HttpDelete("{id}")]
+        public IActionResult DeleteEmployee(long id)
         {
             try
             {
@@ -193,18 +237,18 @@ namespace Bizlite.API.Controllers
                 {
 
                     _logger.LogError("User has not provided correct data");
-                    return BadRequestErrorResult("User has not provided correct data");
+                    return BadRequest();
                 }
-                var areaObj = _unitOfWork.Master.GetAreaById(id);
-                if (areaObj == null)
+                var employeeObj = _unitOfWork.Employee.GetEmployeeById(id);
+                if (employeeObj == null)
                 {
                     _logger.LogError("User not found");
                     return NotFoundResult("User not found");
                 }
 
-                _unitOfWork.Master.DeleteArea(areaObj);
+                _unitOfWork.Employee.DeleteEmployee(employeeObj);
                 _unitOfWork.Save();
-                var areaEntity = _mapper.Map<AreaDTO>(areaObj);
+                var employeeEntity = _mapper.Map<EmployeeDto>(employeeObj);
 
 
                 return SuccessResult("Record has been deleted");

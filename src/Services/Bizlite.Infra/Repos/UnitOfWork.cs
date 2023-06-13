@@ -9,6 +9,7 @@ namespace Bizlite.Infra.Repos
         private readonly BizliteContext _bizliteContext;
         //private IUserRepository? _userRepo;
         private IMasterRepo? _masterRepo;
+        private IEmployeeRepo? _employeeRepo;
 
         public UnitOfWork(BizliteContext bizliteContext)
         {
@@ -36,8 +37,19 @@ namespace Bizlite.Infra.Repos
                 return _masterRepo;
             }
         }
+        public IEmployeeRepo Employee
+        {
+            get
+            {
+                if (_employeeRepo == null)
+                {
+                    _employeeRepo = new EmployeeRepo(_bizliteContext);
+                }
+                return _employeeRepo;
+            }
+        }
 
-       
+
 
         public void Save()
         {

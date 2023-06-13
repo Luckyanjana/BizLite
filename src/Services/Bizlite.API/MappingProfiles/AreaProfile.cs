@@ -3,11 +3,11 @@ using ToDo.WebApi.DTOs;
 
 namespace ToDo.WebApi.MappingProfiles
 {
-    public class AreaProfile:Profile
+    public class EmployeeProfile : Profile
     {
-        public AreaProfile() {
-            CreateMap<Bizlite.Core.Entities.TblAreaMaster, AreaDTO>();
-            CreateMap<AreaCreateUpdateDto, Bizlite.Core.Entities.TblAreaMaster>();
+        public EmployeeProfile() {
+            CreateMap<Bizlite.Core.Entities.TblEmployee, EmployeeDto>();
+            CreateMap<EmployeeCreateUpdateDto, Bizlite.Core.Entities.TblEmployee>();
         }
         
     }

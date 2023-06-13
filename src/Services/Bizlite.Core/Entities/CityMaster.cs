@@ -36,4 +36,6 @@ public partial class CityMaster
     public long? ErpCountryIdno { get; set; }
 
     public bool? IsMetro { get; set; }
+
+    public virtual ICollection<TblEmployee> TblEmployees { get; set; } = new List<TblEmployee>();
 }

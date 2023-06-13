@@ -23,6 +23,7 @@ public partial class BizliteContext : DbContext
 
     public virtual DbSet<StateMaster> StateMasters { get; set; }
 
+    public virtual DbSet<TblEmployee> TblEmployees { get; set; }
     public virtual DbSet<TblAreaMaster> TblAreaMasters { get; set; }
 
     public virtual DbSet<TblBodyType> TblBodyTypes { get; set; }
@@ -273,6 +274,102 @@ public partial class BizliteContext : DbContext
             entity.Property(e => e.ModifiedByUserIdno).HasColumnName("ModifiedBy_UserIdno");
             entity.Property(e => e.PinCode).HasColumnName("Pin_Code");
             entity.Property(e => e.StateIdno).HasColumnName("State_Idno");
+        });
+
+        modelBuilder.Entity<TblEmployee>(entity =>
+        {
+            entity.HasKey(e => e.EmpId);
+           
+            entity.ToTable("tblEmployee");
+            entity.HasIndex(e => e.EmailId, "UK_tblEmployee_email").IsUnique();
+            entity.Property(e => e.EmpId).HasColumnName("emp_id");
+            entity.Property(e => e.AddressLine1)
+                .HasMaxLength(500)
+                .HasColumnName("address_line1");
+            entity.Property(e => e.AddressLine2)
+                .HasMaxLength(500)
+                .HasColumnName("address_line2");
+            entity.Property(e => e.BloodGroup).HasColumnName("blood_group");
+            entity.Property(e => e.CityId).HasColumnName("city_id");
+            entity.Property(e => e.CreatedOn)
+                .HasColumnType("datetime")
+                .HasColumnName("created_on");
+            entity.Property(e => e.DesignationId).HasColumnName("designation_id");
+            entity.Property(e => e.DisplayName)
+                .HasMaxLength(300)
+                .HasColumnName("display_name");
+            entity.Property(e => e.Dob)
+                .HasColumnType("datetime")
+                .HasColumnName("dob");
+            entity.Property(e => e.Doj)
+                .HasColumnType("datetime")
+                .HasColumnName("doj");
+            entity.Property(e => e.Dor)
+                .HasColumnType("datetime")
+                .HasColumnName("dor");
+            entity.Property(e => e.EmailId)
+                .HasMaxLength(300)
+                .HasColumnName("email_id");
+            entity.Property(e => e.EmpGender)
+                .HasMaxLength(1)
+                .IsUnicode(false)
+                .IsFixedLength()
+                .HasColumnName("emp_gender");
+            entity.Property(e => e.EmpName)
+                .HasMaxLength(300)
+                .HasColumnName("emp_name");
+            entity.Property(e => e.EmpPassword)
+                .HasMaxLength(500)
+                .IsUnicode(false)
+                .HasColumnName("emp_password");
+            entity.Property(e => e.FatherName)
+                .HasMaxLength(300)
+                .HasColumnName("father_name");
+            entity.Property(e => e.IsActive)
+                .IsRequired()
+                .HasDefaultValueSql("((1))")
+                .HasColumnName("is_active");
+            entity.Property(e => e.Mobile)
+                .HasMaxLength(15)
+                .HasColumnName("mobile");
+            entity.Property(e => e.ModifiedOn)
+                .HasColumnType("datetime")
+                .HasColumnName("modified_on");
+            entity.Property(e => e.Phone)
+                .HasMaxLength(15)
+                .HasColumnName("phone");
+            entity.Property(e => e.PinCode)
+                .HasMaxLength(10)
+                .HasColumnName("pin_code");
+            entity.Property(e => e.RefferalAddress)
+                .HasMaxLength(1000)
+                .HasColumnName("refferal_address");
+            entity.Property(e => e.RefferalMobile)
+                .HasMaxLength(15)
+                .HasColumnName("refferal_mobile");
+            entity.Property(e => e.RefferalName)
+                .HasMaxLength(300)
+                .HasColumnName("refferal_name");
+            entity.Property(e => e.RefferedbyId).HasColumnName("refferedby_id");
+            entity.Property(e => e.Remark)
+                .HasMaxLength(2000)
+                .HasColumnName("remark");
+            entity.Property(e => e.SaltKey)
+                .HasMaxLength(100)
+                .HasColumnName("salt_key");
+            entity.Property(e => e.StateId).HasColumnName("state_id");
+            entity.Property(e => e.SupervisorId).HasColumnName("supervisor_id");
+            entity.Property(e => e.WorkAreaId).HasColumnName("work_area_id");
+
+            entity.HasOne(d => d.City).WithMany(p => p.TblEmployees)
+                .HasForeignKey(d => d.CityId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_tblEmployee_city");
+
+            entity.HasOne(d => d.State).WithMany(p => p.TblEmployees)
+                .HasForeignKey(d => d.StateId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_tblEmployee_state");
         });
 
         modelBuilder.Entity<TblEquipmentMaster>(entity =>

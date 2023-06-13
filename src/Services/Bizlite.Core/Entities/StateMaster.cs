@@ -27,5 +27,7 @@ public partial class StateMaster
 
     public long? CountryIdno { get; set; }
 
+    public virtual ICollection<TblEmployee> TblEmployees { get; set; } = new List<TblEmployee>();
+
     public virtual ICollection<TblLedgerAccountMaster> TblLedgerAccountMasters { get; set; } = new List<TblLedgerAccountMaster>();
 }
