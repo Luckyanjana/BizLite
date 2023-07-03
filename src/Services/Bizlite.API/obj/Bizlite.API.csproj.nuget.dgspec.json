@@ -4,105 +4,14 @@
     "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\Bizlite.API.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\Bizlite.API.csproj": {
+    "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\Bizlite.API.csproj",
-        "projectName": "Bizlite.API",
-        "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\Bizlite.API.csproj",
-        "packagesPath": "C:\\Users\\PRAVIN\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\PRAVIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj": {
-                "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj"
-              },
-              "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Infra\\Bizlite.Infra.csproj": {
-                "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Infra\\Bizlite.Infra.csproj"
-              },
-              "E:\\Projects\\Bizlite\\src\\SharedLib\\Bizlite.SharedLib\\Bizlite.SharedLib.csproj": {
-                "projectPath": "E:\\Projects\\Bizlite\\src\\SharedLib\\Bizlite.SharedLib\\Bizlite.SharedLib.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[6.0.16, )"
-            },
-            "Microsoft.IdentityModel.Tokens": {
-              "target": "Package",
-              "version": "[6.31.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj",
+        "projectUniqueName": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj",
         "projectName": "Bizlite.Core",
-        "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj",
+        "projectPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj",
         "packagesPath": "C:\\Users\\PRAVIN\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\obj\\",
+        "outputPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -155,14 +64,14 @@
         }
       }
     },
-    "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Infra\\Bizlite.Infra.csproj": {
+    "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Infra\\Bizlite.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Infra\\Bizlite.Infra.csproj",
+        "projectUniqueName": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Infra\\Bizlite.Infra.csproj",
         "projectName": "Bizlite.Infra",
-        "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Infra\\Bizlite.Infra.csproj",
+        "projectPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Infra\\Bizlite.Infra.csproj",
         "packagesPath": "C:\\Users\\PRAVIN\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Infra\\obj\\",
+        "outputPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -184,8 +93,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj": {
-                "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj"
+              "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj": {
+                "projectPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj"
               }
             }
           }
@@ -227,6 +136,93 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\Bizlite.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\Bizlite.API.csproj",
+        "projectName": "Bizlite.API",
+        "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\Bizlite.API.csproj",
+        "packagesPath": "C:\\Users\\PRAVIN\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PRAVIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj": {
+                "projectPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj"
+              },
+              "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Infra\\Bizlite.Infra.csproj": {
+                "projectPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Infra\\Bizlite.Infra.csproj"
+              },
+              "E:\\Projects\\Bizlite\\src\\SharedLib\\Bizlite.SharedLib\\Bizlite.SharedLib.csproj": {
+                "projectPath": "E:\\Projects\\Bizlite\\src\\SharedLib\\Bizlite.SharedLib\\Bizlite.SharedLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

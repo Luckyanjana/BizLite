@@ -473,7 +473,7 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Abstractions/6.31.0": {
+      "Microsoft.IdentityModel.Abstractions/6.21.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {
@@ -502,10 +502,10 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Logging/6.31.0": {
+      "Microsoft.IdentityModel.Logging/6.21.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "6.31.0"
+          "Microsoft.IdentityModel.Abstractions": "6.21.0"
         },
         "compile": {
           "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {
@@ -552,11 +552,11 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Tokens/6.31.0": {
+      "Microsoft.IdentityModel.Tokens/6.21.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Microsoft.IdentityModel.Logging": "6.31.0",
+          "Microsoft.IdentityModel.Logging": "6.21.0",
           "System.Security.Cryptography.Cng": "4.5.0"
         },
         "compile": {
@@ -2575,10 +2575,10 @@
         "microsoft.identity.client.extensions.msal.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Abstractions/6.31.0": {
-      "sha512": "SBa2DGEZpMThT3ki6lOK5SwH+fotHddNBKH+pfqrlINnl999BreRS9G0QiLruwfmcTDnFr8xwmNjoGnPQqfZwg==",
+    "Microsoft.IdentityModel.Abstractions/6.21.0": {
+      "sha512": "XeE6LQtD719Qs2IG7HDi1TSw9LIkDbJ33xFiOBoHbApVw/8GpIBCbW+t7RwOjErUDyXZvjhZliwRkkLb8Z1uzg==",
       "type": "package",
-      "path": "microsoft.identitymodel.abstractions/6.31.0",
+      "path": "microsoft.identitymodel.abstractions/6.21.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2586,15 +2586,13 @@
         "lib/net45/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net461/Microsoft.IdentityModel.Abstractions.dll",
         "lib/net461/Microsoft.IdentityModel.Abstractions.xml",
-        "lib/net462/Microsoft.IdentityModel.Abstractions.dll",
-        "lib/net462/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net472/Microsoft.IdentityModel.Abstractions.dll",
         "lib/net472/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll",
         "lib/net6.0/Microsoft.IdentityModel.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.xml",
-        "microsoft.identitymodel.abstractions.6.31.0.nupkg.sha512",
+        "microsoft.identitymodel.abstractions.6.21.0.nupkg.sha512",
         "microsoft.identitymodel.abstractions.nuspec"
       ]
     },
@@ -2619,10 +2617,10 @@
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/6.31.0": {
-      "sha512": "YzW5O27nTXxNgNKm+Pud7hXjUlDa2JshtRG+WftQvQIsBUpFA/WjhxG2uO8YanfXbb/IT9r8Cu/VdYkvZ3+9/g==",
+    "Microsoft.IdentityModel.Logging/6.21.0": {
+      "sha512": "tuEhHIQwvBEhMf8I50hy8FHmRSUkffDFP5EdLsSDV4qRcl2wvOPkQxYqEzWkh+ytW6sbdJGEXElGhmhDfAxAKg==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/6.31.0",
+      "path": "microsoft.identitymodel.logging/6.21.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2630,15 +2628,13 @@
         "lib/net45/Microsoft.IdentityModel.Logging.xml",
         "lib/net461/Microsoft.IdentityModel.Logging.dll",
         "lib/net461/Microsoft.IdentityModel.Logging.xml",
-        "lib/net462/Microsoft.IdentityModel.Logging.dll",
-        "lib/net462/Microsoft.IdentityModel.Logging.xml",
         "lib/net472/Microsoft.IdentityModel.Logging.dll",
         "lib/net472/Microsoft.IdentityModel.Logging.xml",
         "lib/net6.0/Microsoft.IdentityModel.Logging.dll",
         "lib/net6.0/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.6.31.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.6.21.0.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
@@ -2684,10 +2680,10 @@
         "microsoft.identitymodel.protocols.openidconnect.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/6.31.0": {
-      "sha512": "Q1Ej/OAiqi5b/eB8Ozo5FnQ6vlxjgiomnWWenDi2k7+XqhkA2d5TotGtNXpWcWiGmrotNA/o8p51YesnziA0Sw==",
+    "Microsoft.IdentityModel.Tokens/6.21.0": {
+      "sha512": "AAEHZvZyb597a+QJSmtxH3n2P1nIJGpZ4Q89GTenknRx6T6zyfzf592yW/jA5e8EHN4tNMjjXHQaYWEq5+L05w==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/6.31.0",
+      "path": "microsoft.identitymodel.tokens/6.21.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2695,15 +2691,13 @@
         "lib/net45/Microsoft.IdentityModel.Tokens.xml",
         "lib/net461/Microsoft.IdentityModel.Tokens.dll",
         "lib/net461/Microsoft.IdentityModel.Tokens.xml",
-        "lib/net462/Microsoft.IdentityModel.Tokens.dll",
-        "lib/net462/Microsoft.IdentityModel.Tokens.xml",
         "lib/net472/Microsoft.IdentityModel.Tokens.dll",
         "lib/net472/Microsoft.IdentityModel.Tokens.xml",
         "lib/net6.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/net6.0/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.6.31.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.6.21.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -6143,13 +6137,13 @@
     },
     "Bizlite.Core/1.0.0": {
       "type": "project",
-      "path": "../Bizlite.Core/Bizlite.Core.csproj",
-      "msbuildProject": "../Bizlite.Core/Bizlite.Core.csproj"
+      "path": "../../Domain/Bizlite.Core/Bizlite.Core.csproj",
+      "msbuildProject": "../../Domain/Bizlite.Core/Bizlite.Core.csproj"
     },
     "Bizlite.Infra/1.0.0": {
       "type": "project",
-      "path": "../Bizlite.Infra/Bizlite.Infra.csproj",
-      "msbuildProject": "../Bizlite.Infra/Bizlite.Infra.csproj"
+      "path": "../../Domain/Bizlite.Infra/Bizlite.Infra.csproj",
+      "msbuildProject": "../../Domain/Bizlite.Infra/Bizlite.Infra.csproj"
     },
     "Bizlite.SharedLib/1.0.0": {
       "type": "project",
@@ -6164,7 +6158,6 @@
       "Bizlite.Infra >= 1.0.0",
       "Bizlite.SharedLib >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.16",
-      "Microsoft.IdentityModel.Tokens >= 6.31.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -6201,11 +6194,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj": {
-              "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Core\\Bizlite.Core.csproj"
+            "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj": {
+              "projectPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Core\\Bizlite.Core.csproj"
             },
-            "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Infra\\Bizlite.Infra.csproj": {
-              "projectPath": "E:\\Projects\\Bizlite\\src\\Services\\Bizlite.Infra\\Bizlite.Infra.csproj"
+            "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Infra\\Bizlite.Infra.csproj": {
+              "projectPath": "E:\\Projects\\Bizlite\\src\\Domain\\Bizlite.Infra\\Bizlite.Infra.csproj"
             },
             "E:\\Projects\\Bizlite\\src\\SharedLib\\Bizlite.SharedLib\\Bizlite.SharedLib.csproj": {
               "projectPath": "E:\\Projects\\Bizlite\\src\\SharedLib\\Bizlite.SharedLib\\Bizlite.SharedLib.csproj"
@@ -6230,10 +6223,6 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[6.0.16, )"
-          },
-          "Microsoft.IdentityModel.Tokens": {
-            "target": "Package",
-            "version": "[6.31.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

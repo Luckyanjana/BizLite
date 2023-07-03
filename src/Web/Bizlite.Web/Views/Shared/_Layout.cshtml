@@ -1,22 +1,30 @@
 ﻿
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bizlite | @ViewBag.Title</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon" />
+    <!-- Fonts and icons -->
+    <script src="~/js/plugin/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: { "families": ["Lato:300,400,700,900"] },
+            custom: { "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../css/fonts.min.css'] },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
 
-  <title>Bizlite | @ViewBag.Title</title>
-  <!-- Font Awesome Icons -->
-  
-    <link href="~/css/all.css" rel="stylesheet" />   
-  <!-- IonIcons -->
+    <!-- CSS Files -->
+    <link href="~/js/plugin/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="~/css/ionicons.min.css" rel="stylesheet" />
-  <!-- Theme style -->
-      <link href="~/css/adminlte.css" rel="stylesheet" />
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="~/js/plugin/atlantis.min.css">
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="~/js/plugin/demo.css">
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -28,45 +36,46 @@ to get the desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition sidebar-mini">
-<div class="wrapper">
+<body>
+
+    <div class="wrapper">
         <partial name="_Header.cshtml" />
         <partial name="_Sidebar.cshtml" />
+        <!-- Content Wrapper. Contains page content -->
+        <div class="main-panel">
+            <div class="content">
+                <div class="page-inner">
+                    @RenderBody()
+                </div>
+            </div>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
 
-
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-            <section class="content">
-                @RenderBody()
-            </section>
-
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
 
         <partial name="_Footer.cshtml" />
-</div>
-<!-- ./wrapper -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="~/js/plugin/jquery.3.2.1.min.js"></script>
+    <script src="~/js/plugin/popper.min.js"></script>
+    <script src="~/js/plugin/bootstrap.min.js"></script>
 
-<!-- REQUIRED SCRIPTS -->
+    <!-- jQuery UI -->
+    <script src="~/js/plugin/jquery-ui.min.js"></script>
 
-<!-- jQuery -->
-  
-    <script src="~/js/plugin/jquery.js"></script> 
-       
-<!-- Bootstrap -->   
-    <script src="~/js/plugin/bootstrap.bundle.js"></script>  
-<!-- AdminLTE -->
- <script src="~/js/plugin/adminlte.js"></script>
-   
-<!-- OPTIONAL SCRIPTS -->
+
+    <script src="~/js/plugin/jquery.ui.touch-punch.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="~/js/plugin/jquery.scrollbar.min.js"></script>
+    <!-- jQuery Sparkline -->
+    <script src="~/js/plugin/jquery.sparkline.min.js"></script>
+    <!-- Atlantis JS -->
+    <script src="~/js/atlantis.min.js"></script>
+    <script src="~/js/setting-demo.js"></script>
+    <!-- Atlantis DEMO methods, don't include it in your project! -->
+    <!-- OPTIONAL SCRIPTS -->
     @await RenderSectionAsync("Scripts", required: false)<!--End area -->
 
 

@@ -157,6 +157,10 @@
       "PackagePath": "staticwebassets\\css\\all.min.css"
     },
     {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\css\\fonts.min.css",
+      "PackagePath": "staticwebassets\\css\\fonts.min.css"
+    },
+    {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\css\\icheck-bootstrap.css",
       "PackagePath": "staticwebassets\\css\\icheck-bootstrap.css"
     },
@@ -177,8 +181,156 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\flaticon\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\Flaticon.eot"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\flaticon\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\Flaticon.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\flaticon\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\Flaticon.ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\flaticon\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\Flaticon.woff"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\flaticon\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\_flaticon.scss"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\flaticon\\flaticon.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\flaticon.css"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\flaticon\\flaticon.html",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\flaticon.html"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.eot"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.woff"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.eot"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.woff"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.eot"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.woff"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\fontawesome\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\simple-line-icons\\Simple-Line-Icons.eot",
+      "PackagePath": "staticwebassets\\fonts\\simple-line-icons\\Simple-Line-Icons.eot"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\simple-line-icons\\Simple-Line-Icons.svg",
+      "PackagePath": "staticwebassets\\fonts\\simple-line-icons\\Simple-Line-Icons.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\simple-line-icons\\Simple-Line-Icons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\simple-line-icons\\Simple-Line-Icons.ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\simple-line-icons\\Simple-Line-Icons.woff",
+      "PackagePath": "staticwebassets\\fonts\\simple-line-icons\\Simple-Line-Icons.woff"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\simple-line-icons\\Simple-Line-Icons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\simple-line-icons\\Simple-Line-Icons.woff2"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\summernote\\summernote.eot",
+      "PackagePath": "staticwebassets\\fonts\\summernote\\summernote.eot"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\summernote\\summernote.ttf",
+      "PackagePath": "staticwebassets\\fonts\\summernote\\summernote.ttf"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\fonts\\summernote\\summernote.woff",
+      "PackagePath": "staticwebassets\\fonts\\summernote\\summernote.woff"
+    },
+    {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\AdminLTELogo.png",
       "PackagePath": "staticwebassets\\images\\AdminLTELogo.png"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\chadengle.jpg",
+      "PackagePath": "staticwebassets\\images\\chadengle.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\jm_denis.jpg",
+      "PackagePath": "staticwebassets\\images\\jm_denis.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\mlane.jpg",
+      "PackagePath": "staticwebassets\\images\\mlane.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\profile2.jpg",
+      "PackagePath": "staticwebassets\\images\\profile2.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\talha.jpg",
+      "PackagePath": "staticwebassets\\images\\talha.jpg"
     },
     {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\images\\user1-128x128.jpg",
@@ -213,8 +365,8 @@
       "PackagePath": "staticwebassets\\images\\user8-128x128.jpg"
     },
     {
-      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\atlantis.min.js",
+      "PackagePath": "staticwebassets\\js\\atlantis.min.js"
     },
     {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\datetimepicker.js",
@@ -225,12 +377,8 @@
       "PackagePath": "staticwebassets\\js\\global.js"
     },
     {
-      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\adminlte.js",
-      "PackagePath": "staticwebassets\\js\\plugin\\adminlte.js"
-    },
-    {
-      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\adminlte.js.map",
-      "PackagePath": "staticwebassets\\js\\plugin\\adminlte.js.map"
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\atlantis.min.css",
+      "PackagePath": "staticwebassets\\js\\plugin\\atlantis.min.css"
     },
     {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\bootstrap.bundle.js",
@@ -239,6 +387,30 @@
     {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\js\\plugin\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\js\\plugin\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\plugin\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\demo.css",
+      "PackagePath": "staticwebassets\\js\\plugin\\demo.css"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\fonts.min.css",
+      "PackagePath": "staticwebassets\\js\\plugin\\fonts.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\plugin\\jquery-ui.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery.3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\plugin\\jquery.3.2.1.min.js"
     },
     {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery.js",
@@ -253,6 +425,10 @@
       "PackagePath": "staticwebassets\\js\\plugin\\jquery.min.map"
     },
     {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery.scrollbar.min.js",
+      "PackagePath": "staticwebassets\\js\\plugin\\jquery.scrollbar.min.js"
+    },
+    {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery.slim.js",
       "PackagePath": "staticwebassets\\js\\plugin\\jquery.slim.js"
     },
@@ -263,6 +439,14 @@
     {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\js\\plugin\\jquery.slim.min.map"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\js\\plugin\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery.ui.touch-punch.min.js",
+      "PackagePath": "staticwebassets\\js\\plugin\\jquery.ui.touch-punch.min.js"
     },
     {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\jquery.validate.js",
@@ -281,8 +465,20 @@
       "PackagePath": "staticwebassets\\js\\plugin\\jquery.validate.unobtrusive.min.js"
     },
     {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\plugin\\popper.min.js"
+    },
+    {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\validate.js",
       "PackagePath": "staticwebassets\\js\\plugin\\validate.js"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\plugin\\webfont.min.js",
+      "PackagePath": "staticwebassets\\js\\plugin\\webfont.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\setting-demo.js",
+      "PackagePath": "staticwebassets\\js\\setting-demo.js"
     },
     {
       "Id": "E:\\Projects\\Bizlite\\src\\Web\\Bizlite.Web\\wwwroot\\js\\site.js",

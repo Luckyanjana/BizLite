@@ -9,14 +9,13 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.16" />
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.31.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Bizlite.Core\Bizlite.Core.csproj" />
+    <ProjectReference Include="..\..\Domain\Bizlite.Infra\Bizlite.Infra.csproj" />
     <ProjectReference Include="..\..\SharedLib\Bizlite.SharedLib\Bizlite.SharedLib.csproj" />
-    <ProjectReference Include="..\Bizlite.Core\Bizlite.Core.csproj" />
-    <ProjectReference Include="..\Bizlite.Infra\Bizlite.Infra.csproj" />
   </ItemGroup>
 
 </Project>

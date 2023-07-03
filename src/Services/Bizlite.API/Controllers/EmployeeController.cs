@@ -1,26 +1,15 @@
 ﻿using AutoMapper;
-using Bizlite.API.Config;
 using Bizlite.Core.Interfaces;
 using Bizlite.Core.Specifications;
 using Bizlite.SharedLib.Helper;
-using Bizlite.SharedLib.Resource;
-using Bizlite.SharedLib.ViewModel;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
 using ToDo.WebApi.DTOs;
-using ToDo.WebApi.Models;
 
 namespace Bizlite.API.Controllers
 {
-    
+
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class EmployeeController : BaseController

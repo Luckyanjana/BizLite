@@ -2,4 +2,257 @@
     ViewData["Title"] = "Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<p>This is dashboard</p>
+<style>
+    #empdetail .nav-pills > li > .nav-link {
+        border: 0;
+        border-radius: 0 !important;
+    }
+
+        #empdetail .nav-pills > li > .nav-link.active {
+            background: none;
+            border-bottom: solid 2px #1269db;
+            color: #1269db;
+        }
+
+    .breadcrumbs {
+        border-left: 1px solid #efefef;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #empdetail ul {
+        border-bottom: solid 1px #e5e5e5;
+        height: 48px;
+    }
+</style>
+<div class="page-header">
+
+    <ul class="breadcrumbs" style="margin-left:0px">
+        <li class="nav-item">
+            <a href="#">Home</a>
+        </li>
+        <li class="separator">
+            <i class="flaticon-right-arrow"></i>
+        </li>
+        <li class="nav-item">
+            <a href="#">Employees</a>
+        </li>
+    </ul>
+</div>
+<div class="row" id="empdetail">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Employees Details</div>
+            </div>
+            <div class="card-body">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#employee-detail" role="tab" aria-controls="pills-home" aria-selected="true">Employee Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#employee-qualification" role="tab" aria-controls="pills-profile" aria-selected="false">Qualification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#employee-certification" role="tab" aria-controls="pills-contact" aria-selected="false">Certification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#employee-designation" role="tab" aria-controls="pills-contact" aria-selected="false">Designation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#employee-document" role="tab" aria-controls="pills-contact" aria-selected="false">Document Upload</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="employee-detail" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="card-body">
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="EmpName" placeholder="Employee Name">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="EmpName" placeholder="Father's Name">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="EmpName" placeholder="Address">
+                                </div>
+                            </div>
+                            
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="Pincode" placeholder="Pin code">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="DOB" placeholder="Date of birth">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="DisplayName" placeholder="Display Name">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="Mobile" placeholder="Mobile Number">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="Designation" placeholder="Designation">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="Password" class="form-control" id="Password" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="ReferredBy" placeholder="Referred By">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="Remark" placeholder="Remark">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="WorkArea" placeholder="Work Area">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <select class="form-control form-control" id="Gender">
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                      
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-control form-control" id="SelectState">
+                                        <option>Rajasthan</option>
+                                        <option>Uttar Pradesh</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-control form-control" id="SelectCity">
+                                        <option>Jaipur</option>
+                                        <option>Jhansi</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <select class="form-control form-control" id="BloodGroup">
+                                        <option>A</option>
+                                        <option>B</option>
+                                         <option>AB</option>
+                                        <option>O</option>
+
+                                    </select>
+                                </div>
+                               
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-8">
+                                 
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-primary">
+                                        <span class="btn-label">
+                                            <i class="fa fa-save"></i>
+                                        </span>
+                                        Submit
+                                    </button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-default">
+                                        <span class="btn-label">
+                                            <i class="fa fa-window-close"></i>
+                                        </span>
+                                        Cancel
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="employee-qualification" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="card-body">
+                           
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <select class="form-control form-control" id="SelectParent1">
+                                        <option>Select Parent</option>
+                                        <option>Male</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                  
+                                        <select class="form-control input-border-bottom" id="selectFloatingLabel" required="">
+                                            <option value="">Passing Year</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                       
+                                  
+                                </div>
+                                <div class="col-md-4">
+                                    <input id="inputFloatingLabel" type="text" class="form-control input-border-bottom" required="" placeholder="Percentage">
+                                </div>
+                            </div>
+                        
+                                <div class="row form-group">
+                                    <div class="col-md-4">
+                                        <select class="form-control form-control" id="SelectParent1">
+                                            <option>Select Parent</option>
+                                            <option>Male</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+
+                                        <select class="form-control input-border-bottom" id="selectFloatingLabel" required="">
+                                            <option value="">Passing Year</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input id="inputFloatingLabel" type="text" class="form-control input-border-bottom" required="" placeholder="Percentage">
+                                    </div>
+                                </div>
+                            <div class="row form-group">
+                                <div class="col-md-8">
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-primary">
+                                        <span class="btn-label">
+                                            <i class="fa fa-save"></i>
+                                        </span>
+                                        Save
+                                    </button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-default">
+                                        <span class="btn-label">
+                                            <i class="fa fa-window-close"></i>
+                                        </span>
+                                        Cancel
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="employee-certification" role="tabpanel" aria-labelledby="pills-contact-tab">.3..</div>
+                    <div class="tab-pane fade" id="employee-designation" role="tabpanel" aria-labelledby="pills-contact-tab">.4..</div>
+                    <div class="tab-pane fade" id="employee-document" role="tabpanel" aria-labelledby="pills-contact-tab">.5..</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,173 +1,249 @@
-﻿  <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-        <img src="~/images/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-             style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
+﻿<div class="sidebar sidebar-style-2">
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
-                <img src="~/images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-            </div>
-            <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
-            </div>
-        </div>
+	<div class="sidebar-wrapper scrollbar scrollbar-inner">
+		<div class="sidebar-content">
+			<div class="user">
+				<div class="avatar-sm float-left mr-2">
+					<img src="~/images/profile.jpg" alt="..." class="avatar-img rounded-circle">
+				</div>
+				<div class="info">
+					<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+						<span>
+							Hizrian
+							<span class="user-level">Administrator</span>
+							<span class="caret"></span>
+						</span>
+					</a>
+					<div class="clearfix"></div>
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <!-- Add icons to the links using the .nav-icon class
-                     with font-awesome or any other icon font library -->
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="DashboardIndex" class="nav-link active">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Dashboard
-                           
-                        </p>
-                    </a>
-                    
-                </li>
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            Area Master
-                           
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
-                        <p>
-                            Booking
-                            
-                        </p>
-                    </a>
-                    
-                </li>
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
-                        <p>
-                            Body Type Master
-                            
-                        </p>
-                    </a>
-                    
-                </li>
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon fas fa-tree"></i>
-                        <p>
-                            City Area Master
-                            
-                        </p>
-                    </a>
-                   
-                </li>
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon fas fa-edit"></i>
-                        <p>
-                            Group Master
-                            
-                        </p>
-                    </a>
-                    
-                </li>
-             
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon fas fa-calendar-alt"></i>
-                        <p>
-                            Ledger Master
-                           
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon far fa-image"></i>
-                        <p>
-                            Membership Master
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item has-treeview">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon far fa-envelope"></i>
-                        <p>
-                            Occupation Master
-                           
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Product Master</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Rate Master</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Rental Master</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon fas fa-book"></i>
-                        <p>
-                            Sub Group Master
-                          
-                        </p>
-                    </a>
-                    
-                </li>
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon far fa-plus-square"></i>
-                        <p>
-                            Source Master
-                           
-                        </p>
-                    </a>
-                  
-                </li>
-               
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="nav-icon fas fa-file"></i>
-                        <p>Brand Master</p>
-                    </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a asp-action="Home" asp-controller="InProgress" class="nav-link">
-                        <i class="fas fa-circle nav-icon"></i>
-                        <p>Equipment Master</p>
-                    </a>
-                </li>
-              
-            </ul>
-        </nav>
-        <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-</aside>
+					<div class="collapse in" id="collapseExample">
+						<ul class="nav">
+							<li>
+								<a href="#profile">
+									<span class="link-collapse">My Profile</span>
+								</a>
+							</li>
+							<li>
+								<a href="#edit">
+									<span class="link-collapse">Edit Profile</span>
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<span class="link-collapse">Settings</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<ul class="nav nav-primary">
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+						<i class="fas fa-home"></i>
+						<p>Dashboard</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="dashboard">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="../demo1/index.html">
+									<span class="sub-item">Dashboard 1</span>
+								</a>
+							</li>
+							<li>
+								<a href="../demo2/index.html">
+									<span class="sub-item">Dashboard 2</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-section">
+					<span class="sidebar-mini-icon">
+						<i class="fa fa-ellipsis-h"></i>
+					</span>
+					<h4 class="text-section">Components</h4>
+				</li>
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#base">
+						<i class="fas fa-layer-group"></i>
+						<p>Base</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="base">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="components/avatars.html">
+									<span class="sub-item">Avatars</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/buttons.html">
+									<span class="sub-item">Buttons</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/gridsystem.html">
+									<span class="sub-item">Grid System</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/panels.html">
+									<span class="sub-item">Panels</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/notifications.html">
+									<span class="sub-item">Notifications</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/sweetalert.html">
+									<span class="sub-item">Sweet Alert</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/font-awesome-icons.html">
+									<span class="sub-item">Font Awesome Icons</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/simple-line-icons.html">
+									<span class="sub-item">Simple Line Icons</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/flaticons.html">
+									<span class="sub-item">Flaticons</span>
+								</a>
+							</li>
+							<li>
+								<a href="components/typography.html">
+									<span class="sub-item">Typography</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#sidebarLayouts">
+						<i class="fas fa-th-list"></i>
+						<p>Sidebar Layouts</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="sidebarLayouts">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="sidebar-style-1.html">
+									<span class="sub-item">Sidebar Style 1</span>
+								</a>
+							</li>
+							<li>
+								<a href="overlay-sidebar.html">
+									<span class="sub-item">Overlay Sidebar</span>
+								</a>
+							</li>
+							<li>
+								<a href="compact-sidebar.html">
+									<span class="sub-item">Compact Sidebar</span>
+								</a>
+							</li>
+							<li>
+								<a href="static-sidebar.html">
+									<span class="sub-item">Static Sidebar</span>
+								</a>
+							</li>
+							<li>
+								<a href="icon-menu.html">
+									<span class="sub-item">Icon Menu</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#forms">
+						<i class="fas fa-pen-square"></i>
+						<p>Forms</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="forms">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="forms/forms.html">
+									<span class="sub-item">Basic Form</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#tables">
+						<i class="fas fa-table"></i>
+						<p>Tables</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="tables">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="tables/tables.html">
+									<span class="sub-item">Basic Table</span>
+								</a>
+							</li>
+							<li>
+								<a href="tables/datatables.html">
+									<span class="sub-item">Datatables</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#maps">
+						<i class="fas fa-map-marker-alt"></i>
+						<p>Maps</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="maps">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="maps/jqvmap.html">
+									<span class="sub-item">JQVMap</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a data-toggle="collapse" href="#charts">
+						<i class="far fa-chart-bar"></i>
+						<p>Charts</p>
+						<span class="caret"></span>
+					</a>
+					<div class="collapse" id="charts">
+						<ul class="nav nav-collapse">
+							<li>
+								<a href="charts/charts.html">
+									<span class="sub-item">Chart Js</span>
+								</a>
+							</li>
+							<li>
+								<a href="charts/sparkline.html">
+									<span class="sub-item">Sparkline</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item active">
+					<a href="widgets.html">
+						<i class="fas fa-users"></i>
+						<p>Employees</p>
+						
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
